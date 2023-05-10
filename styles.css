@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+body {
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+}
+.youtube-container {
+  width: 70%;
+  margin: auto;
+}
+.search {
+  display: flex;
+  position: relative;
+}
+.search > span {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+.search > input {
+  flex-grow: 1;
+  padding: 20px;
+  padding-left: 100px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f1f3f4;
+  font-size: 24px;
+}
+.search > input:focus {
+  outline: none;
+}
+.chip-container {
+  display: flex;
+  padding: 10px 0;
+  overflow-x: scroll;
+  gap: 10px;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a1a1a1;
+}
+
+.chip {
+  background-color: #272727;
+  color: white;
+  font-size: 16px;
+  padding: 6px 10px;
+  border-radius: 15px;
+  transition: 0.5s;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.chip:hover {
+  background-color: #544444;
+}
+.videos-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px 30px;
+  padding: 50px 20px;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.video:hover {
+  transform: scaleX(1.1) scaleY(1.1);
+}
+.video > img {
+  height: 200px;
+  border-radius: 20px;
+}
+.logo-container {
+  display: flex;
+  gap: 10px;
+}
+.logo-container > img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.logo-container > p {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.video > p {
+  color: #909090;
+  padding-left: 60px;
+  font-size: 18px;
+}
+.views-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  color: #909090;
+  font-size: 18px;
+}
